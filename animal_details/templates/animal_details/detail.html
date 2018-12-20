@@ -1,0 +1,16 @@
+{% extends 'animal_details/base.html' %}
+{% block title %}Medicine  Details{% endblock %}
+{% block body %}
+
+<h1>{{animal.Animal_species}}</h1>
+<h4>   id              = {{animal.id}}</h4>
+<h4>   Count           = {{animal.Animal_count}}</h4>
+<h4>   Scientific Name = {{animal.Scientific_name}}</h4>
+<h4>   Type            = {{animal.Animal_type}}</h4>
+<h4>   Country         = {{animal.Country}}</h4>
+<h4>   Feed            = {{animal.Animal_feed}}</h4>
+<h4>   Feed Cost       = {{animal.Feed_cost}}</h4>
+
+
+
+{% endblock %}

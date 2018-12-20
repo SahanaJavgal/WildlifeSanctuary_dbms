@@ -1,0 +1,27 @@
+{% extends 'animal_details/base.html' %}
+{% block title %}Staff{% endblock %}
+{% block body %}
+
+<div class="container">
+    <h2>Staff Details</h2>
+    <table class="table table-hover">
+        <thead>
+          <tr>
+             <th>StaffName</th>
+              <th>Designation</th>
+              <th>Salary</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for Staff in object_list %}
+          <tr>
+              <td>{{Staff.id}}</td>
+              <td>{{Staff.Staff_name}}</td>
+              <td>{{Staff.Designation}}</td>
+              <td>{{Staff.Salary}}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
